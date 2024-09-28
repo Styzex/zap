@@ -46,6 +46,9 @@ fn listener(input: &str) {
     else if input == "zap run" {
         zap::run_project();
     }
+    else if input == "zap test" {
+        zap::test_project();
+    }
     else {
         println!("Invalid command!");
     }
