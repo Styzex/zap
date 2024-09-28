@@ -1,10 +1,10 @@
 # Zap
 
-## What is Zap?
+## ⚡ What is Zap?
 
 Zap is a simple project manager for Python built with Rust, designed to help you quickly create and run your Python projects. It is inspired by the popular project managers like `cargo` and `npm`.
 
-## How to use Zap?
+## 🚀 Getting Started
 
 To create a new project, run the following command in your terminal:
 
@@ -28,16 +28,16 @@ zap test
 
 Zap will run the tests in the `test` directory.
 
-## Features
+## 📚 Features
 
 - Create and run Python projects
 - Run tests
 - Supports Python 3.x
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you find any bugs or have any suggestions, please open an issue or submit a pull request.
 
-## License
+## 📄 License
 
 This project is licensed under the APACHE LICENSE 2.0. See the [LICENSE](LICENSE) file for more information.
