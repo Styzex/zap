@@ -11,8 +11,10 @@ fn print_logo() {
         "  ░▒▓██▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ",
         " ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ",
         " ░▒▓████████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ",
-        ""
-    ].into_iter().collect::<Vec<&str>>();
+        "",
+    ]
+    .into_iter()
+    .collect::<Vec<&str>>();
 
     for line in logo {
         println!("{}", line);
@@ -42,14 +44,11 @@ fn listener(input: &str) {
         io::stdin().read_line(&mut project_name).unwrap();
         project_name = project_name.trim().to_string();
         zap::create_project(&project_name);
-    }
-    else if input == "zap run" {
+    } else if input == "zap run" {
         zap::run_project();
-    }
-    else if input == "zap test" {
+    } else if input == "zap test" {
         zap::test_project();
-    }
-    else {
+    } else {
         println!("Invalid command!");
     }
 }
@@ -59,6 +58,6 @@ fn main() {
     print_welcome_message();
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-    println!("");
+    println!();
     listener(&input.trim());
 }
